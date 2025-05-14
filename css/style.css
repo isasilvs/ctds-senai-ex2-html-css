@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-menu:#f1c40f;
+    --background-body: #f4f4f4;
+    --color-body: #2c3e50;
+    --background-header: #2c3e50 ;
+    --color-logo:  #f1c40f;
+    --color-secaoh1:#2c3e50;
+    --background-card:#fff;
+    --background-button: #f1c40f;
+    --color-button:#2c3e50;
+    --background-footer:#2c3e50;
+    --color-footer:white;
+    --color-roda: #b8b29d;
+    --background-depoimento: white;
+    --background-strong:white;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.menu{
+    color: var(--color-menu);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    list-style: none;
+
+}
+
+main{
+    width: 1200;
+    margin: auto;
+}
+
+
+.open{
+    text-align: center;
+    margin: 30px;
+}
+
+.open p{
+    margin: 30px;
+}
+
+
+body{
+    background-color: var(--background-body);
+    color: var(--color-body);
+}
+
+header{
+    background-color:var(--background-header);
+    
+}
+
+.logo{
+    color: var(--color-logo);
+}
+
+.secao h1,.secao h2{
+    color: var(--color-secaoh1);
+    text-align: center;
+    margin: 30px;
+}
+
+.produtos{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.card{
+    background-color: var(--background-card);
+    border: 1px solid #ccc;
+    width: 220px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    padding-bottom: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    display: flex;    
+    align-items: center;
+    padding: 20px;
+    
+
+}
+
+.card button{
+    border: none;
+    background-color: var(--background-button);
+    color: var(--color-button);
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card p, .card h3{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer{
+    background-color: var(--background-footer);
+    color:var(--color-footer);
+    display: flex;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.roda, .pe a, .info li a{
+    color: var(--color-roda);
+}
+
+
+.roda :hover{
+    text-decoration: underline;
+}
+
+.depoimento{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-depoimento);
+    width: 98%;
+    height: 340px;
+    margin: 25px auto;
+}
+
+.depoimento h2{
+    text-align: center;
+    padding: 25px 0;
+}
+.depoimento-strong p{
+    margin: 15px auto;
+
+    align-items: center;
+}
+
+.depoimento-lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.depoimento-strong{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 260px;
+    background-color:var(--background-strong);
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(172, 170, 170);
+    border-radius: 10px;
+
+}
+
+.depoimento-strong img{
+    border-radius: 100px;
+    width: 80px;
+
+}
+
+@media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+  
+    .produtos, .depoimento-lista {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
